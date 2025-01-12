@@ -38,11 +38,11 @@ def process_dataset(data_folder):
                         print(f"  Extracting from: {pdf_path}")
                         text = extract_text_from_pdf(pdf_path)
                         
-                        # Save extracted text to a file
+                        # Save extracted text to a file.
                         with open(output_file, "w", encoding="utf-8") as outfile:
                             outfile.write(text)
             print(f"Text from {subfolder} saved in {output_folder}")
 
-# Path to your dataset folder
-data_folder = r"C:\Users\naman\OneDrive\Desktop\New folder\data"
+# Path to your dataset folder and pls change path according to your location.
+data_folder = r"C:\Users\user\OneDrive\Desktop\New folder\data"
 process_dataset(data_folder)
